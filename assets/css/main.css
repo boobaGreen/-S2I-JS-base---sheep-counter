@@ -87,32 +87,32 @@ body {
   justify-content: space-around;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0.3rem;
-  padding: 3rem;
-  gap: 8rem;
+  padding: 2rem;
+  gap: 3rem;
 }
 .counter div {
   margin: auto;
 }
 @media only screen and (max-width: 75em) {
   .counter {
-    gap: 12rem;
+    gap: 3rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .counter {
-    gap: 15rem;
+    gap: 5rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .counter {
-    gap: 25rem;
+    gap: 10rem;
   }
 }
 
 /* ------- Counter - display number ------- */
 .display-number {
-  height: 8rem;
-  width: 32rem;
+  height: 6rem;
+  width: 25rem;
   background: transparent;
   color: rgb(207, 198, 226);
   display: flex;

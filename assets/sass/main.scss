@@ -72,22 +72,22 @@ body {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
   //box-shadow: 2px 3px 3px 2px $color-background-night;
   border-radius: 0.3rem;
-  padding: 3rem;
-  gap: 8rem; // default dai 100 ai 1800
+  padding: 2rem;
+  gap: 3rem; // default dai 1200 ai 1800
   div {
     margin: auto;
   }
   @include respond(tab-land) {
     //width<1200
-    gap: 12rem;
+    gap: 3rem;
   }
   @include respond(tab-port) {
     //width<900
-    gap: 15rem;
+    gap: 5rem;
   }
   @include respond(phone) {
     //width<600
-    gap: 25rem;
+    gap: 10rem;
   }
 }
 
@@ -96,8 +96,8 @@ body {
 .display-number {
   // background: $color-background-night;;
   //flex-grow: 1;
-  height: 8rem;
-  width: 32rem;
+  height: 6rem;
+  width: 25rem;
   background: transparent;
   color: $color-shadow-3;
   display: flex;

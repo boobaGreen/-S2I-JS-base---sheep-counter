@@ -5,7 +5,8 @@ import sheepx from "./sheepx.js";
 import calc_altezza from "./calc_altezza.js";
 
 const screen = {
-  phone: null,
+  smaller: null,
+  phone: window.matchMedia("(min-width: 360px)"),
   tab_port: window.matchMedia("(min-width: 600px)"),
   tab_land: window.matchMedia("(min-width: 900px)"),
   default: window.matchMedia("(min-width: 1200px)"),
@@ -13,7 +14,7 @@ const screen = {
 };
 
 const PECOARRAY = [0, 1, 2, 3, 4, 1, 0];
-
+let sheep_mode = "normal";
 export function main() {
   sky();
   let hground = ground();
@@ -33,9 +34,10 @@ export function main() {
   //let counter = 999999;
   let counter = 0;
   let frame = 0;
+
   let sheepleft = sheepx(frame);
-  let sheepbottom = calc_altezza(frame, hground);
-  drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft);
+  let sheepbottom = calc_altezza(frame, hground, sheep_mode);
+  drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
   //  add media query events
   for (let [scr, mq] of Object.entries(screen)) {
     if (mq) mq.addEventListener("change", mqHandler);
@@ -64,8 +66,8 @@ export function main() {
       frame = 0;
     }
     sheepleft = sheepx(frame);
-    sheepbottom = calc_altezza(frame, hground);
-    drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft);
+    sheepbottom = calc_altezza(frame, hground, sheep_mode);
+    drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     button.play();
     displayNumber.innerHTML = counter;
   }
@@ -82,8 +84,8 @@ export function main() {
     }
 
     sheepleft = sheepx(frame);
-    sheepbottom = calc_altezza(frame, hground);
-    drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft);
+    sheepbottom = calc_altezza(frame, hground, sheep_mode);
+    drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     button.play();
     displayNumber.innerHTML = counter;
     //se verso allora il frame zero si comporta in n modo se altro verso in un altro
@@ -94,8 +96,8 @@ export function main() {
     counter = 0;
     frame = 0;
     sheepleft = sheepx(frame);
-    sheepbottom = calc_altezza(frame, hground);
-    drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft);
+    sheepbottom = calc_altezza(frame, hground, sheep_mode);
+    drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     buttonrst.play();
     displayNumber.innerHTML = counter;
   }
@@ -105,10 +107,18 @@ export function main() {
     for (let [scr, mq] of Object.entries(screen)) {
       if (!mq || mq.matches) size = scr;
     }
+    console.log(size);
     sheepleft = sheepx(frame);
     hground = ground();
-    sheepbottom = calc_altezza(frame, hground);
-    drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft);
-    console.log(size); // cosa fare nella funzione resize!!!
+    console.log("hground :", hground);
+    if (hground < 157) {
+      sheep_mode = "short";
+    } else {
+      sheep_mode = "normal";
+    }
+    sheepbottom = calc_altezza(frame, hground, sheep_mode);
+    ground(sheep_mode);
+    drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
+    console.log(sheep_mode, "sheep mode in mqhandler"); // cosa fare nella funzione resize!!!
   }
 }

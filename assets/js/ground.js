@@ -1,16 +1,20 @@
-export default function ground() {
+export default function ground(sheep_mode) {
   var c = document.getElementById("canvas-generalsheep");
   c.style.zIndex = "-1"; // prova!!!!!!!!!!!!!!!
   var ctx = c.getContext("2d");
 
   let wground = document.documentElement.clientWidth;
   let hground = Math.trunc(wground / 5.727891156462585);
-
+  if (sheep_mode == "short") {
+    hground = hground * 1.5;
+    console.log(sheep_mode, " :sheep inside if in draw ground");
+  }
   c.width = wground;
   //console.log(w, "w");
   //console.log(h, "h");
   //quote 842/147 original size ground =5,7278911564625850
   c.height = hground;
+
   //console.log(c.height);
   const img = new Image();
   img.onload = () => {
