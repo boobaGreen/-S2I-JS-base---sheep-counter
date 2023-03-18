@@ -56,6 +56,7 @@ body {
   //background-color: whitesmoke;
 
   flex-grow: 1;
+  min-width: min-content;
   width: 80%;
   background-color: transparent;
   display: flex;
@@ -76,8 +77,9 @@ body {
 
 .display-number {
   // background: $color-background-night;;
-  flex-grow: 1;
-  width: 30%;
+  //flex-grow: 1;
+  height: 8rem;
+  width: 32rem;
   background: transparent;
   color: $color-shadow-3;
   display: flex;
@@ -93,12 +95,13 @@ body {
 
 .button-container {
   display: flex;
-  flex-grow: 1;
+
   flex-direction: inline-flex;
   align-items: flex-start;
   justify-content: space-between;
   //justify-content: space-between;
   width: 80%;
+  gap: 5rem;
   //border-radius:5px ;
   //font-size: 100px;
 }
@@ -111,8 +114,8 @@ body {
 
 button {
   font-size: 2rem;
-  height: 60%;
-  width: 15%;
+  height: 8rem;
+  width: 8rem;
   box-shadow: -3px 3px 3px $color-writing-primiry;
   border-radius: 100%;
 

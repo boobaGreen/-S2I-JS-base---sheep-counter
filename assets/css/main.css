@@ -49,6 +49,8 @@ body {
 /* ------- Counter - general style  ------- */
 .counter {
   flex-grow: 1;
+  min-width: -moz-min-content;
+  min-width: min-content;
   width: 80%;
   background-color: transparent;
   display: flex;
@@ -65,8 +67,8 @@ body {
 
 /* ------- Counter - display number ------- */
 .display-number {
-  flex-grow: 1;
-  width: 30%;
+  height: 8rem;
+  width: 32rem;
   background: transparent;
   color: rgb(207, 198, 226);
   display: flex;
@@ -81,11 +83,11 @@ body {
 /* ------- Counter - button's section ------- */
 .button-container {
   display: flex;
-  flex-grow: 1;
   flex-direction: inline-flex;
   align-items: flex-start;
   justify-content: space-between;
   width: 80%;
+  gap: 5rem;
 }
 
 .sheep {
@@ -95,8 +97,8 @@ body {
 
 button {
   font-size: 2rem;
-  height: 60%;
-  width: 15%;
+  height: 8rem;
+  width: 8rem;
   box-shadow: -3px 3px 3px whitesmoke;
   border-radius: 100%;
   background-color: #28353e;

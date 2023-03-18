@@ -1,10 +1,11 @@
 export default function drawing_sheep(frame, bottom, left) {
   var c = document.getElementById("canvas-sheep");
-  c.style.zIndex = "10"; // prova!!!!!!!!!!!!!!!
+  //c.style.zIndex = "10"; // prova!!!!!!!!!!!!!!!
   var ctx = c.getContext("2d");
   //842/121=6,9586776859504132231404958677686 original pecorelle ratio
   var wwindows = document.documentElement.clientWidth;
-  var w = Math.trunc(wwindows / 6.9586776859504132231404958677686);
+  //var w = Math.trunc(wwindows / 6.9586776859504132231404958677686);
+  var w = Math.trunc(wwindows / 10);
   var h = w;
   c.height = h;
   c.width = w;

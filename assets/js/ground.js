@@ -5,6 +5,7 @@ export default function ground() {
 
   let wground = document.documentElement.clientWidth;
   let hground = Math.trunc(wground / 5.727891156462585);
+
   c.width = wground;
   //console.log(w, "w");
   //console.log(h, "h");

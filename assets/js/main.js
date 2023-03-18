@@ -3,6 +3,7 @@ import ground from "./ground.js";
 import drawing_sheep from "./draw_sheep.js";
 import sheepx from "./sheepx.js";
 import calc_altezza from "./calc_altezza.js";
+
 const PECOARRAY = [0, 1, 2, 3, 4, 1, 0];
 
 export function main() {
