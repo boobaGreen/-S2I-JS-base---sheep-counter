@@ -1,3 +1,4 @@
+// MEDIA QUERY MANAGER
 /* 
 0-600px: Phone
 600-900px: Tablet Portrait
@@ -19,4 +20,26 @@ $breakpoint argument choices:
 1 em= 16px ( il resto del progetto era in rem che valeva 10px ma per le media query usiamo em per evitare che la scelta di una grandezza di font custom seclto dall'utente nel browser abbia la precedenza su quello che e' di base la ggrandezza del font scelta nel progetto
 max-width : domanda e' minore di x?
 min-width doomanda: e' maggiore di x?
-*//*# sourceMappingURL=index.css.map */
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
+}

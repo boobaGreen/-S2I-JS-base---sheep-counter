@@ -1,3 +1,25 @@
+/* 
+0-600px: Phone
+600-900px: Tablet Portrait
+900-1200px: Tablet landscape
+[1200-1800]: e' la grandezza "Naturale" di partenza
+1800px+ : Big desktop
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+--ORDER-- Base+typography>general layout +grid>page layout> components
+
+*/
+/*
+
+1 em= 16px ( il resto del progetto era in rem che valeva 10px ma per le media query usiamo em per evitare che la scelta di una grandezza di font custom seclto dall'utente nel browser abbia la precedenza su quello che e' di base la ggrandezza del font scelta nel progetto
+max-width : domanda e' minore di x?
+min-width doomanda: e' maggiore di x?
+*/
 /* ------- General style ------- */
 *,
 *::before,
@@ -13,23 +35,30 @@
 
 html {
   font-size: 62.5%;
-  /*   @include respond(tab-land) {
-    //width<1200
-    //1 rem=9px, 9/16=56.25%
+}
+@media only screen and (max-width: 75em) {
+  html {
     font-size: 56.25%;
   }
-  @include respond(tab-port) {
-    //width<900
-    //1 rem=8px, 8/16=50%
+}
+@media only screen and (max-width: 56.25em) {
+  html {
     font-size: 50%;
   }
-
-  @include respond(big-desktop) {
-    font-size: 75%; //1rem=12, 12/16 =75%
-  } */
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 35%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
+  min-width: 360px;
   overflow: hidden;
   padding: 5rem;
   margin: 0;
@@ -59,10 +88,25 @@ body {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0.3rem;
   padding: 3rem;
-  gap: 5rem;
+  gap: 8rem;
 }
 .counter div {
   margin: auto;
+}
+@media only screen and (max-width: 75em) {
+  .counter {
+    gap: 12rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .counter {
+    gap: 15rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .counter {
+    gap: 25rem;
+  }
 }
 
 /* ------- Counter - display number ------- */
@@ -112,7 +156,6 @@ button {
   overflow: hidden;
   cursor: pointer;
 }
-
 button:hover {
   transform: translate(0.4rem, -0.2rem);
   color: rgb(207, 198, 226);

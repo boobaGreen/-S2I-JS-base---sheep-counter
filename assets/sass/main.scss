@@ -14,11 +14,9 @@
   outline: none;
 }
 html {
-  //avendo usanto rem in tutto il progetto ci aiuta parecchio per la portabilita' perche' ora cambiando qui font-size gia' molte cose saranno scalate
-  // This define what 1rem is
   font-size: 62.5%; // 1 rem = 10px 10px/16px=62.5%
 
-  /*   @include respond(tab-land) {
+  @include respond(tab-land) {
     //width<1200
     //1 rem=9px, 9/16=56.25%
     font-size: 56.25%;
@@ -28,12 +26,21 @@ html {
     //1 rem=8px, 8/16=50%
     font-size: 50%;
   }
+  @include respond(phone) {
+    //width<600
+    //1 rem=8px, 8/16=50%
+    font-size: 35%;
+  }
+  // qui in mezzo c'e la misura di defatult !!!!
+  // font*size in quseto caso di html 62.5%
+  // >1200 e minore di 1800
 
   @include respond(big-desktop) {
     font-size: 75%; //1rem=12, 12/16 =75%
-  } */
+  }
 }
 body {
+  min-width: 360px;
   overflow: hidden;
   padding: 5rem;
   margin: 0;
@@ -66,10 +73,21 @@ body {
   //box-shadow: 2px 3px 3px 2px $color-background-night;
   border-radius: 0.3rem;
   padding: 3rem;
-  gap: 5rem;
-
+  gap: 8rem; // default dai 100 ai 1800
   div {
     margin: auto;
+  }
+  @include respond(tab-land) {
+    //width<1200
+    gap: 12rem;
+  }
+  @include respond(tab-port) {
+    //width<900
+    gap: 15rem;
+  }
+  @include respond(phone) {
+    //width<600
+    gap: 25rem;
   }
 }
 
@@ -131,6 +149,19 @@ button {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  @include respond(tab-land) {
+    //width<1200
+  }
+  @include respond(tab-port) {
+    //width<900
+  }
+  @include respond(phone) {
+    //width<600
+  }
+
+  @include respond(big-desktop) {
+    //>1800
+  }
 }
 button:hover {
   transform: translate(+0.4rem, -0.2rem);

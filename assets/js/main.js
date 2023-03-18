@@ -4,6 +4,14 @@ import drawing_sheep from "./draw_sheep.js";
 import sheepx from "./sheepx.js";
 import calc_altezza from "./calc_altezza.js";
 
+const screen = {
+  phone: null,
+  tab_port: window.matchMedia("(min-width: 600px)"),
+  tab_land: window.matchMedia("(min-width: 900px)"),
+  default: window.matchMedia("(min-width: 1200px)"),
+  big_desktop: window.matchMedia("(min-width: 1800px)"),
+};
+
 const PECOARRAY = [0, 1, 2, 3, 4, 1, 0];
 
 export function main() {
@@ -28,7 +36,12 @@ export function main() {
   let sheepleft = sheepx(frame);
   let sheepbottom = calc_altezza(frame, hground);
   drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft);
-
+  //  add media query events
+  for (let [scr, mq] of Object.entries(screen)) {
+    if (mq) mq.addEventListener("change", mqHandler);
+  }
+  // first event
+  mqHandler();
   // addEventListener
   incrementButton.addEventListener("click", incrementCounter);
   decrementButton.addEventListener("click", decrementCounter);
@@ -81,5 +94,14 @@ export function main() {
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft);
     buttonrst.play();
     displayNumber.innerHTML = counter;
+  }
+  // media query handler function
+  function mqHandler() {
+    let size = null;
+    for (let [scr, mq] of Object.entries(screen)) {
+      if (!mq || mq.matches) size = scr;
+    }
+
+    console.log(size);
   }
 }
