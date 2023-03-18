@@ -125,9 +125,5 @@ export function main() {
     //////////////////////////////////test
     ////////////////////////////
     //////prova
-    let a = document.getElementById("prova");
-    console.log(viewportx);
-    console.log(viewporty);
-    a.innerHTML = `${viewporty} :v -- ${viewportx} :x`;
   }
 }
