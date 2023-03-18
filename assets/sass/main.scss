@@ -100,6 +100,7 @@ body {
 .display-number {
   // background: $color-background-night;;
   //flex-grow: 1;
+
   height: 6rem;
   width: 25rem;
   background: transparent;
@@ -131,7 +132,13 @@ body {
 .sheep {
   color: $color-shadow-2;
   flex-grow: 2;
+  //position: absolute;
+  z-index: -5 !important;
   //font-size: 5rem;
+}
+.canvas-generalsheep {
+  position: absolute;
+  z-index: +5 !important;
 }
 
 button {

@@ -10,8 +10,10 @@ async function init() {
   // const counterMainDiv = document.getElementById("counter");
   createGeneralElement("canvas", "sky", "");
   createGeneralElement("div", "counter", "");
-  addElement("div", "display-number", "0");
+
   addElement("div", "button-container", "");
+  addElement("div", "display-number", "0");
+
   addElement("div", "sheep", "");
   addElementInsideCounterNameSection("canvas", "canvas-generalsheep", "pecora");
   addElementInsideCounterNameSection("canvas", "canvas-sheep", "pecora");
