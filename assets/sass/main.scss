@@ -8,12 +8,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: inherit;
 }
 
 *:focus {
   outline: none;
 }
 html {
+  font-family: myFont2;
   font-size: 62.5%; // 1 rem = 10px 10px/16px=62.5%
 
   @include respond(tab-land) {
@@ -40,7 +42,6 @@ html {
   }
 }
 body {
-  font-family: myFont2;
   min-width: 360px;
   overflow: hidden;
   padding: 5rem;
@@ -51,7 +52,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: $color-background-night;
-  font-family: myFont2;
+
   /////previeni highlight
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -136,7 +137,7 @@ body {
 }
 
 button {
-  font-family: myFont2;
+  font-family: myFont4;
   font-size: 2rem;
   height: 8rem;
   width: 8rem;

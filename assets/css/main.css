@@ -1,10 +1,18 @@
 @font-face {
-  font-family: myFont;
+  font-family: myFont1;
   src: url(/assets/font/Sheep-Regular.ttf);
 }
 @font-face {
   font-family: myFont2;
   src: url(/assets/font/ScriptSheep.ttf);
+}
+@font-face {
+  font-family: myFont3;
+  src: url(/assets/font/LovelyHome-9aBZ.ttf);
+}
+@font-face {
+  font-family: myFont4;
+  src: url(/assets/font/DripOctober-vm0JA.ttf);
 }
 /* 
 0-600px: Phone
@@ -35,6 +43,7 @@ min-width doomanda: e' maggiore di x?
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: inherit;
 }
 
 *:focus {
@@ -42,6 +51,7 @@ min-width doomanda: e' maggiore di x?
 }
 
 html {
+  font-family: myFont2;
   font-size: 62.5%;
 }
 @media only screen and (max-width: 75em) {
@@ -66,7 +76,6 @@ html {
 }
 
 body {
-  font-family: myFont2;
   min-width: 360px;
   overflow: hidden;
   padding: 5rem;
@@ -77,7 +86,6 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #28353e;
-  font-family: myFont2;
   -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
@@ -153,7 +161,7 @@ body {
 }
 
 button {
-  font-family: myFont2;
+  font-family: myFont4;
   font-size: 2rem;
   height: 8rem;
   width: 8rem;

@@ -17,9 +17,9 @@ async function init() {
   addElement("div", "sheep", "");
   addElementInsideCounterNameSection("canvas", "canvas-generalsheep", "pecora");
   addElementInsideCounterNameSection("canvas", "canvas-sheep", "pecora");
-  addElementInsideCounterButtonSection("button", "button-decrement", "-");
+  addElementInsideCounterButtonSection("button", "button-decrement", "DEC");
   addElementInsideCounterButtonSection("button", "button-reset", "reset");
-  addElementInsideCounterButtonSection("button", "button-increment", "+");
+  addElementInsideCounterButtonSection("button", "button-increment", "INC");
 
   main();
 }

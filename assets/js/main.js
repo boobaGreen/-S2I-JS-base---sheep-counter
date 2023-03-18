@@ -29,6 +29,7 @@ export function main() {
   //Audio Section
   let button = new Audio("assets/audio/swing.mp3");
   let buttonrst = new Audio("assets/audio/sheep.mp3");
+  let tape = new Audio("assets/audio/tape.mp3");
   //bee=
 
   // Setting counter's initial value
@@ -88,7 +89,7 @@ export function main() {
     sheepleft = sheepx(frame);
     sheepbottom = calc_altezza(frame, hground, sheep_mode);
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
-    button.play();
+    tape.play();
     displayNumber.innerHTML = counter;
     //se verso allora il frame zero si comporta in n modo se altro verso in un altro
   }
