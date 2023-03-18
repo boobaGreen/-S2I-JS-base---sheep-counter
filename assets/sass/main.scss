@@ -1,0 +1,167 @@
+@use "../sass/partials" as *;
+
+/* ------- General style ------- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+html {
+  //avendo usanto rem in tutto il progetto ci aiuta parecchio per la portabilita' perche' ora cambiando qui font-size gia' molte cose saranno scalate
+  // This define what 1rem is
+  font-size: 62.5%; // 1 rem = 10px 10px/16px=62.5%
+
+  /*   @include respond(tab-land) {
+    //width<1200
+    //1 rem=9px, 9/16=56.25%
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    //width<900
+    //1 rem=8px, 8/16=50%
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem=12, 12/16 =75%
+  } */
+}
+body {
+  overflow: hidden;
+  padding: 5rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: $color-background-night;
+  font-family: $font-family;
+  /////previeni highlight
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  font-size: 16px;
+}
+
+/* ------- Counter - general style  ------- */
+.counter {
+  //background-color: whitesmoke;
+
+  flex-grow: 1;
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+  //box-shadow: 2px 3px 3px 2px $color-background-night;
+  border-radius: 0.3rem;
+  padding: 3rem;
+  gap: 5rem;
+
+  div {
+    margin: auto;
+  }
+}
+
+/* ------- Counter - display number ------- */
+
+.display-number {
+  // background: $color-background-night;;
+  flex-grow: 1;
+  width: 30%;
+  background: transparent;
+  color: $color-shadow-3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  box-shadow: -3px 3px 3px $color-shadow-3;
+  font-size: 4rem;
+}
+
+/* ------- Counter - button's section ------- */
+
+.button-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  //justify-content: space-between;
+  width: 80%;
+  //border-radius:5px ;
+  //font-size: 100px;
+}
+
+.sheep {
+  color: $color-shadow-2;
+  flex-grow: 2;
+  //font-size: 5rem;
+}
+
+button {
+  font-size: 2rem;
+  height: 60%;
+  width: 15%;
+  box-shadow: -3px 3px 3px $color-shadow-3;
+  border-radius: 100%;
+
+  background-color: $color-background-night;
+  border: none;
+
+  color: $color-shadow-3;
+  padding: 0.1rem;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.6s;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+button:hover {
+  transform: translate(+0.4rem, -0.2rem);
+  color: $color-shadow-4;
+  box-shadow: -5px 5px 3px $color-shadow-4;
+}
+button:after {
+  content: "";
+  background: $color-shadow-3;
+  display: block;
+  position: absolute;
+  padding-top: 350%;
+  padding-left: 300%;
+  margin-left: -2rem !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+/* ------- Counter - name's container ------- */
+
+/* ------- Mediaquery ------- */
+
+//@import "../sass/partials/mediaquery";
