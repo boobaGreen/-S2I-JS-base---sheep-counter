@@ -1,18 +1,18 @@
 @font-face {
   font-family: myFont1;
-  src: url(assets/font/Sheep-Regular.ttf);
+  src: url(/assets/font/Sheep-Regular.ttf);
 }
 @font-face {
   font-family: myFont2;
-  src: url(assets/font/ScriptSheep.ttf);
+  src: url(/assets/font/ScriptSheep.ttf);
 }
 @font-face {
   font-family: myFont3;
-  src: url(assets/font/LovelyHome-9aBZ.ttf);
+  src: url(/assets/font/LovelyHome-9aBZ.ttf);
 }
 @font-face {
   font-family: myFont4;
-  src: url(assets/font/DripOctober-vm0JA.ttf);
+  src: url(/assets/font/DripOctober-vm0JA.ttf);
 }
 /* 
 0-600px: Phone
@@ -51,7 +51,7 @@ min-width doomanda: e' maggiore di x?
 }
 
 html {
-  font-family: myFont1;
+  font-family: myFont2;
   font-size: 62.5%;
 }
 @media only screen and (max-width: 75em) {
