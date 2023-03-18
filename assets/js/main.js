@@ -47,6 +47,10 @@ export function main() {
   decrementButton.addEventListener("click", decrementCounter);
   resetButton.addEventListener("click", resetCounter);
 
+  window.addEventListener("resize", function (event) {
+    mqHandler();
+  });
+
   /* --- function section --- */
 
   // function - increment value
@@ -101,7 +105,10 @@ export function main() {
     for (let [scr, mq] of Object.entries(screen)) {
       if (!mq || mq.matches) size = scr;
     }
-
-    console.log(size);
+    sheepleft = sheepx(frame);
+    hground = ground();
+    sheepbottom = calc_altezza(frame, hground);
+    drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft);
+    console.log(size); // cosa fare nella funzione resize!!!
   }
 }
