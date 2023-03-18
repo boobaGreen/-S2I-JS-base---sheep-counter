@@ -3,7 +3,8 @@ import ground from "./ground.js";
 import drawing_sheep from "./draw_sheep.js";
 import sheepx from "./sheepx.js";
 import calc_altezza from "./calc_altezza.js";
-
+let viewportx = window.innerWidth;
+let viewporty = window.innerHeight;
 const screen = {
   smaller: null,
   phone: window.matchMedia("(min-width: 360px)"),
@@ -37,7 +38,7 @@ export function main() {
 
   let sheepleft = sheepx(frame);
   let sheepbottom = calc_altezza(frame, hground, sheep_mode);
-  drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
+
   //  add media query events
   for (let [scr, mq] of Object.entries(screen)) {
     if (mq) mq.addEventListener("change", mqHandler);
@@ -53,6 +54,7 @@ export function main() {
     mqHandler();
   });
 
+  ////////////////////////////////
   /* --- function section --- */
 
   // function - increment value
@@ -120,5 +122,12 @@ export function main() {
     ground(sheep_mode);
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     console.log(sheep_mode, "sheep mode in mqhandler"); // cosa fare nella funzione resize!!!
+    //////////////////////////////////test
+    ////////////////////////////
+    //////prova
+    let a = document.getElementById("prova");
+    console.log(viewportx);
+    console.log(viewporty);
+    a.innerHTML = `${viewporty} :v -- ${viewportx} :x`;
   }
 }

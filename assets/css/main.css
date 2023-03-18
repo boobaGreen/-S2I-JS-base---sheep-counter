@@ -75,6 +75,11 @@ body {
   font-size: 16px;
 }
 
+.prova {
+  position: absolute;
+  z-index: 300;
+}
+
 /* ------- Counter - general style  ------- */
 .counter {
   flex-grow: 1;
