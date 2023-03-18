@@ -40,6 +40,7 @@ html {
   }
 }
 body {
+  font-family: myFont2;
   min-width: 360px;
   overflow: hidden;
   padding: 5rem;
@@ -50,7 +51,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: $color-background-night;
-  font-family: $font-family;
+  font-family: myFont2;
   /////previeni highlight
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -136,6 +137,7 @@ body {
 }
 
 button {
+  font-family: myFont2;
   font-size: 2rem;
   height: 8rem;
   width: 8rem;

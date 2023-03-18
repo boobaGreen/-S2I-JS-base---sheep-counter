@@ -1,3 +1,11 @@
+@font-face {
+  font-family: myFont;
+  src: url(/assets/font/Sheep-Regular.ttf);
+}
+@font-face {
+  font-family: myFont2;
+  src: url(/assets/font/ScriptSheep.ttf);
+}
 /* 
 0-600px: Phone
 600-900px: Tablet Portrait

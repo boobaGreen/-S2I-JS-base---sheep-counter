@@ -1,2 +1,12 @@
 // Font - type
 $font-family: "Reem Kufi", sans-serif;
+
+@font-face {
+  font-family: myFont;
+  src: url(/assets/font/Sheep-Regular.ttf);
+}
+
+@font-face {
+  font-family: myFont2;
+  src: url(/assets/font/ScriptSheep.ttf);
+}
