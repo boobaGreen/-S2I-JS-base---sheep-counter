@@ -1,4 +1,15 @@
 @forward "colors";
-@forward "fonts";
+//@forward "fonts";
 @forward "mediaquery";
 @forward "utilities";
+// Font - type
+
+@font-face {
+  font-family: myFont2;
+  src: url(assets/font/ScriptSheep.ttf) format("trutype");
+}
+
+@font-face {
+  font-family: myFont4;
+  src: url(assets/font/drip.ttf) format("trutype");
+}
