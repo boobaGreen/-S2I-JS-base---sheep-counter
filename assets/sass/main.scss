@@ -83,21 +83,21 @@ body {
   //box-shadow: 2px 3px 3px 2px $color-background-night;
   border-radius: 0.3rem;
   padding: 2rem;
-  gap: 3rem; // default dai 1200 ai 1800
+  gap: 10rem; // default dai 1200 ai 1800
   div {
     margin: auto;
   }
   @include respond(tab-land) {
     //width<1200
-    gap: 3rem;
+    gap: 12rem;
   }
   @include respond(tab-port) {
     //width<900
-    gap: 5rem;
+    gap: 12rem;
   }
   @include respond(phone) {
     //width<600
-    gap: 10rem;
+    gap: 6rem;
   }
 }
 

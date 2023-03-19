@@ -1,0 +1,10 @@
+@font-face {
+  font-family: myFontCounter;
+  src: url("/sheep-counter/assets/font/ScriptofSheep.ttf");
+  src: url("/sheep-counter/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"), url("/sheep-counter/assets/font/ScriptofSheep.woff") format("woff"), url("/sheep-counter/assets/font/ScriptofSheep.ttf") format("truetype"), url("/sheep-counter/assets/font/ScriptofSheep#svgFontName") format("svg");
+}
+@font-face {
+  font-family: myFontBtn;
+  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf");
+  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf.eot?#iefix") format("embedded-opentype"), url("/sheep-counter/assets/font/DripOctoberRegular.woff") format("woff"), url("/sheep-counter/assets/font/DripOctoberRegular.ttf") format("truetype"), url("/sheep-counter/assets/font/DripOctoberRegular#svgFontName") format("svg");
+}/*# sourceMappingURL=indexold.css.map */

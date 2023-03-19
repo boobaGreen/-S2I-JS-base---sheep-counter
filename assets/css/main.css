@@ -22,14 +22,37 @@ min-width doomanda: e' maggiore di x?
 */
 @font-face {
   font-family: myFontCounter;
-  src: url("/sheep-counter/assets/font/ScriptofSheep.ttf"); /* IE9 Compat Modes */
-  src: url("/sheep-counter/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"), url("/sheep-counter/assets/font/ScriptofSheep.woff") format("woff"), url("/sheep-counter/assets/font/ScriptofSheep.ttf") format("truetype"), url("/sheep-counter/assets/font/ScriptofSheep#svgFontName") format("svg"); /* Legacy iOS */
+  src: url("/assets/font/ScriptofSheep.ttf"); /* IE9 Compat Modes */
+  src: url("/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"), url("/assets/font/ScriptofSheep.woff") format("woff"), url("/assets/font/ScriptofSheep.ttf") format("truetype"), url("/assets/font/ScriptofSheep#svgFontName") format("svg"); /* Legacy iOS */
 }
 @font-face {
   font-family: myFontBtn;
-  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf"); /* IE9 Compat Modes */
-  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf.eot?#iefix") format("embedded-opentype"), url("/sheep-counter/assets/font/DripOctoberRegular.woff") format("woff"), url("/sheep-counter/assets/font/DripOctoberRegular.ttf") format("truetype"), url("/sheep-counter/assets/font/DripOctoberRegular#svgFontName") format("svg"); /* Legacy iOS */
+  src: url("/assets/font/DripOctoberRegular.ttf"); /* IE9 Compat Modes */
+  src: url("/assets/font/DripOctoberRegular.ttf.eot?#iefix") format("embedded-opentype"), url("/assets/font/DripOctoberRegular.woff") format("woff"), url("/assets/font/DripOctoberRegular.ttf") format("truetype"), url("/assets/font/DripOctoberRegular#svgFontName") format("svg"); /* Legacy iOS */
 }
+/* @font-face {
+  font-family: myFontCounter;
+
+  src: url("/sheep-counter/assets/font/ScriptofSheep.ttf");
+  src: url("/sheep-counter/assets/font/ScriptofSheep.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sheep-counter/assets/font/ScriptofSheep.woff") format("woff"),
+    url("/sheep-counter/assets/font/ScriptofSheep.ttf") format("truetype"),
+    url("/sheep-counter/assets/font/ScriptofSheep#svgFontName") format("svg");
+}
+
+@font-face {
+  font-family: myFontBtn;
+
+  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf");
+  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sheep-counter/assets/font/DripOctoberRegular.woff") format("woff"),
+    url("/sheep-counter/assets/font/DripOctoberRegular.ttf") format("truetype"),
+    url("/sheep-counter/assets/font/DripOctoberRegular#svgFontName")
+      format("svg");
+}
+ */
 /* ------- General style ------- */
 *,
 *::before,
@@ -109,24 +132,24 @@ body {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0.3rem;
   padding: 2rem;
-  gap: 3rem;
+  gap: 10rem;
 }
 .counter div {
   margin: auto;
 }
 @media only screen and (max-width: 75em) {
   .counter {
-    gap: 3rem;
+    gap: 12rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .counter {
-    gap: 5rem;
+    gap: 12rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .counter {
-    gap: 10rem;
+    gap: 6rem;
   }
 }
 
