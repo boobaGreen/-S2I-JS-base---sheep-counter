@@ -23,7 +23,7 @@ min-width doomanda: e' maggiore di x?
 */
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 31.25em) and (height>width) {
+    @media only screen and (max-width: 31.25em) {
       @content;
     } //500px
   }
