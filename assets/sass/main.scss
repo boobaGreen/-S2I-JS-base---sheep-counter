@@ -97,7 +97,7 @@ body {
   }
   @include respond(phone) {
     //width<600
-    gap: 6rem;
+    gap: 1rem;
   }
 }
 
@@ -172,6 +172,17 @@ button {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+
+  @include respond(tab-port) {
+    //width<900
+    height: 8rem;
+    width: 8rem;
+  }
+  @include respond(phone) {
+    //width<600
+    height: 8rem;
+    width: 8rem;
+  }
 }
 button:hover {
   transform: translate(+0.4rem, -0.2rem);

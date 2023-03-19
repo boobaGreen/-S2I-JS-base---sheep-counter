@@ -1,7 +1,7 @@
 export default function sky() {
   let c = document.getElementById("sky");
   c.style.position = "absolute";
-  c.style.zIndex = "-1"; // prova!!!!!!!!!!!!!!!
+  c.style.zIndex = "-5"; // prova!!!!!!!!!!!!!!!
 
   var ctx = c.getContext("2d");
   var xMax = (c.width = window.screen.availWidth);
