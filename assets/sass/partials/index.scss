@@ -6,10 +6,10 @@
 
 @font-face {
   font-family: myFont2;
-  src: url(/assets/font/ScriptSheep.ttf) format("truetype"); // la barra prima di asset la vuole
+  src: url(./assets/font/ScriptSheep.ttf) format("truetype"); // la barra prima di asset la vuole
 }
 
 @font-face {
   font-family: myFont4;
-  src: url(/assets/font/drip.ttf) format("truetype");
+  src: url(./assets/font/drip.ttf) format("truetype");
 }
