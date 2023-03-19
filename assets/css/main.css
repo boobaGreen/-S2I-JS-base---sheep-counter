@@ -194,7 +194,7 @@ button {
 }
 
 button:hover {
-  transform: translate(0.4rem, -0.2rem);
+  transform: translate(0.45rem, -0.225rem);
   box-shadow: -5px 5px 3px rgb(182, 154, 13);
 }
 
