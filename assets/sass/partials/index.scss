@@ -5,7 +5,7 @@
 // Font - type
 
 @font-face {
-  font-family: myFont2;
+  font-family: myFontCounter;
   // la barra prima di asset la vuole
   src: url("/assets/font/ScriptofSheep.ttf"); /* IE9 Compat Modes */
   src: url("/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"),
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: myFont4;
+  font-family: myFontBtn;
   // la barra prima di asset la vuole
   src: url("/assets/font/DripOctoberRegular.ttf"); /* IE9 Compat Modes */
   src: url("/assets/font/DripOctoberRegular.ttf.eot?#iefix")

@@ -21,12 +21,12 @@ max-width : domanda e' minore di x?
 min-width doomanda: e' maggiore di x?
 */
 @font-face {
-  font-family: myFont2;
+  font-family: myFontCounter;
   src: url("/assets/font/ScriptofSheep.ttf"); /* IE9 Compat Modes */
   src: url("/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"), url("/assets/font/ScriptofSheep.woff") format("woff"), url("/assets/font/ScriptofSheep.ttf") format("truetype"), url("/assets/font/ScriptofSheep#svgFontName") format("svg"); /* Legacy iOS */
 }
 @font-face {
-  font-family: myFont4;
+  font-family: myFontBtn;
   src: url("/assets/font/DripOctoberRegular.ttf"); /* IE9 Compat Modes */
   src: url("/assets/font/DripOctoberRegular.ttf.eot?#iefix") format("embedded-opentype"), url("/assets/font/DripOctoberRegular.woff") format("woff"), url("/assets/font/DripOctoberRegular.ttf.ttf") format("truetype"), url("/assets/font/DripOctoberRegular.ttf#svgFontName") format("svg"); /* Legacy iOS */
 }/*# sourceMappingURL=index.css.map */
