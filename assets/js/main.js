@@ -89,7 +89,7 @@ export function main() {
     sheepleft = sheepx(frame);
     sheepbottom = calc_altezza(frame, hground, sheep_mode);
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
-    tape.play();
+    tapelow.play();
     displayNumber.innerHTML = counter;
     //se verso allora il frame zero si comporta in n modo se altro verso in un altro
   }
