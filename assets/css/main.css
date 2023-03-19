@@ -164,6 +164,7 @@ body {
 }
 
 button {
+  background-color: rgb(246, 238, 230);
   font-size: 2rem;
   height: 8rem;
   width: 8rem;
@@ -180,13 +181,12 @@ button {
 
 button:hover {
   transform: translate(0.4rem, -0.2rem);
-  color: rgb(182, 154, 13);
   box-shadow: -5px 5px 3px rgb(182, 154, 13);
 }
 
 button:after {
   content: "";
-  background: whitesmoke;
+  background: rgb(142, 140, 140);
   border-radius: 100rem;
   display: block;
   position: absolute;
