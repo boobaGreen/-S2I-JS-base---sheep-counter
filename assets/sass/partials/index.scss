@@ -8,16 +8,25 @@
   font-family: myFont2;
   src: url(./assets/font/ScriptSheep.ttf) format("truetype");
   // la barra prima di asset la vuole
-  src: url("./assets/font/ScriptSheep.ttf"); /* IE9 Compat Modes */
-  src: url("./assets/font/ScriptSheep.eot?#iefix") format("embedded-opentype"),
+  src: url("/assets/font/ScriptofSheep.ttf"); /* IE9 Compat Modes */
+  src: url("./assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */ url("webfont.woff") format("woff"),
-    /* Modern Browsers */ url("./assets/font/ScriptSheep.ttf")
+    /* Modern Browsers */ url("./assets/font/ScriptofSheep.ttf")
       format("truetype"),
-    /* Safari, Android, iOS */ url("./assets/font/ScriptSheep#svgFontName")
+    /* Safari, Android, iOS */ url("./assets/font/ScriptofSheep#svgFontName")
       format("svg"); /* Legacy iOS */
 }
 
 @font-face {
   font-family: myFont4;
-  src: url(./assets/font/drip.ttf) format("truetype");
+  src: url(./assets/font/ScriptSheep.ttf) format("truetype");
+  // la barra prima di asset la vuole
+  src: url("assets/font/DripOctoberRegular.ttf"); /* IE9 Compat Modes */
+  src: url("assets/font/DripOctoberRegular.ttf.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("webfont.woff") format("woff"),
+    /* Modern Browsers */ url("assets/font/DripOctoberRegular.ttf.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("assets/font/DripOctoberRegular.ttf#svgFontName") format("svg"); /* Legacy iOS */
 }
