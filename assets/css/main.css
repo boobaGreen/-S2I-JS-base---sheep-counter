@@ -60,7 +60,7 @@ html {
 }
 @media only screen and (max-width: 37.5em) {
   html {
-    font-size: 35%;
+    font-size: 40%;
   }
 }
 @media only screen and (min-width: 112.5em) {
@@ -72,7 +72,7 @@ html {
 body {
   min-width: 360px;
   overflow: hidden;
-  padding: 5rem;
+  padding: 7rem;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -84,6 +84,11 @@ body {
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
   font-size: 16px;
+}
+@media only screen and (max-width: 37.5em) {
+  body {
+    padding: 4rem;
+  }
 }
 
 .prova {
@@ -146,6 +151,12 @@ body {
   justify-content: space-between;
   width: 80%;
   gap: 5rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .sheep {

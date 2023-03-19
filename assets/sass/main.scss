@@ -31,7 +31,7 @@ html {
   @include respond(phone) {
     //width<600
     //1 rem=8px, 8/16=50%
-    font-size: 35%;
+    font-size: 40%;
   }
   // qui in mezzo c'e la misura di defatult !!!!
   // font*size in quseto caso di html 62.5%
@@ -44,7 +44,7 @@ html {
 body {
   min-width: 360px;
   overflow: hidden;
-  padding: 5rem;
+  padding: 7rem;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -58,6 +58,10 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   font-size: 16px;
+  @include respond(phone) {
+    //width<600
+    padding: 4rem;
+  }
 }
 
 .prova {
@@ -127,6 +131,17 @@ body {
   gap: 5rem;
   //border-radius:5px ;
   //font-size: 100px;
+  @include respond(tab-land) {
+    //width<1200
+  }
+  @include respond(tab-port) {
+    //width<900
+  }
+  @include respond(phone) {
+    //width<600
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .sheep {
