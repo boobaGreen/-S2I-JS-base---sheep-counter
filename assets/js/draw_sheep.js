@@ -9,7 +9,6 @@ export default function drawing_sheep(frame, bottom, left, sheep_mode) {
   var w = Math.trunc(wwindows / 6.9586776859504132231404958677686);
   if (sheep_mode == "short") {
     w = w * 1.5;
-    console.log(sheep_mode, " :sheep inside if in draw sheep");
   }
   var h = w;
   c.height = h;

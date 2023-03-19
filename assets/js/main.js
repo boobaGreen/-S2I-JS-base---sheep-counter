@@ -111,19 +111,19 @@ export function main() {
     for (let [scr, mq] of Object.entries(screen)) {
       if (!mq || mq.matches) size = scr;
     }
-    console.log(size);
+
     sheepleft = sheepx(frame);
     hground = ground();
-    console.log("hground :", hground);
     if (hground < 157) {
       sheep_mode = "short";
     } else {
       sheep_mode = "normal";
     }
     sheepbottom = calc_altezza(frame, hground, sheep_mode);
+    sky();
     ground(sheep_mode);
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
-    console.log(sheep_mode, "sheep mode in mqhandler"); // cosa fare nella funzione resize!!!
+
     //////////////////////////////////test
     ////////////////////////////
     //////prova

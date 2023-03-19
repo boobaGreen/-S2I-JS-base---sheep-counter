@@ -7,7 +7,6 @@ export default function ground(sheep_mode) {
   let hground = Math.trunc(wground / 5.727891156462585);
   if (sheep_mode == "short") {
     hground = hground * 1.5;
-    console.log(sheep_mode, " :sheep inside if in draw ground");
   }
   c.width = wground;
   //console.log(w, "w");
