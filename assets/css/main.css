@@ -22,14 +22,12 @@ min-width doomanda: e' maggiore di x?
 */
 @font-face {
   font-family: myFont2;
-  src: url(/assets/font/ScriptSheep.ttf);
+  src: url(/assets/font/ScriptSheep.ttf) format("truetype");
 }
-
 @font-face {
   font-family: myFont4;
-  src: url(/assets/font/drip.ttf);
+  src: url(/assets/font/drip.ttf) format("truetype");
 }
-
 /* ------- General style ------- */
 *,
 *::before,
@@ -48,25 +46,21 @@ html {
   font-family: myFont2;
   font-size: 62.5%;
 }
-
 @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
 }
-
 @media only screen and (max-width: 56.25em) {
   html {
     font-size: 50%;
   }
 }
-
 @media only screen and (max-width: 37.5em) {
   html {
     font-size: 35%;
   }
 }
-
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -84,12 +78,9 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #28353e;
-  -webkit-user-select: none;
-  /* Safari */
-  /* IE 10 and IE 11 */
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
   -moz-user-select: none;
-  user-select: none;
-  /* Standard syntax */
+       user-select: none; /* Standard syntax */
   font-size: 16px;
 }
 
@@ -113,23 +104,19 @@ body {
   padding: 2rem;
   gap: 3rem;
 }
-
 .counter div {
   margin: auto;
 }
-
 @media only screen and (max-width: 75em) {
   .counter {
     gap: 3rem;
   }
 }
-
 @media only screen and (max-width: 56.25em) {
   .counter {
     gap: 5rem;
   }
 }
-
 @media only screen and (max-width: 37.5em) {
   .counter {
     gap: 10rem;
@@ -176,15 +163,13 @@ button {
   border: none;
   color: rgb(207, 198, 226);
   padding: 0.1rem;
-  text-align: center;
-  /* Safari */
+  text-align: center; /* Safari */
   transition-duration: 0.6s;
   text-decoration: none;
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
-
 button:hover {
   transform: translate(0.4rem, -0.2rem);
   color: rgb(207, 198, 226);
@@ -213,5 +198,4 @@ button:active:after {
 }
 
 /* ------- Counter - name's container ------- */
-/* ------- Mediaquery ------- */
-/*# sourceMappingURL=main.css.map */
+/* ------- Mediaquery ------- *//*# sourceMappingURL=main.css.map */

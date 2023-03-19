@@ -22,9 +22,9 @@ min-width doomanda: e' maggiore di x?
 */
 @font-face {
   font-family: myFont2;
-  src: url(assets/font/ScriptSheep.ttf) format("trutype");
+  src: url(/assets/font/ScriptSheep.ttf) format("truetype");
 }
 @font-face {
   font-family: myFont4;
-  src: url(assets/font/drip.ttf) format("trutype");
+  src: url(/assets/font/drip.ttf) format("truetype");
 }/*# sourceMappingURL=index.css.map */
