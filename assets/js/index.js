@@ -12,14 +12,14 @@ async function init() {
   createGeneralElement("div", "counter", "");
 
   addElement("div", "button-container", "");
-  addElement("div", "display-number", "0");
+  addElement("div", "display-number", "GoodNight Counter");
 
   addElement("div", "sheep", "");
   addElementInsideCounterNameSection("canvas", "canvas-generalsheep", "pecora");
   addElementInsideCounterNameSection("canvas", "canvas-sheep", "pecora");
-  addElementInsideCounterButtonSection("button", "button-decrement", "DEC");
+  addElementInsideCounterButtonSection("button", "button-decrement", "-");
   addElementInsideCounterButtonSection("button", "button-reset", "reset");
-  addElementInsideCounterButtonSection("button", "button-increment", "INC");
+  addElementInsideCounterButtonSection("button", "button-increment", "+");
 
   main();
 }

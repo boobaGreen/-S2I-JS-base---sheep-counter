@@ -14,6 +14,7 @@ const screen = {
   big_desktop: window.matchMedia("(min-width: 1800px)"),
 };
 
+const TITOLI = [];
 const PECOARRAY = [0, 1, 2, 3, 4, 1, 0];
 let sheep_mode = "normal";
 export function main() {
@@ -28,7 +29,7 @@ export function main() {
 
   //Audio Section
   let button = new Audio("assets/audio/swing.mp3");
-  let buttonrst = new Audio("assets/audio/sheep.mp3");
+  let buttonrst = new Audio("assets/audio/beecutvoldwn.mp3");
   let tapelow = new Audio("assets/audio/lowtape.mp3");
   //bee=
 
@@ -102,7 +103,7 @@ export function main() {
     sheepbottom = calc_altezza(frame, hground, sheep_mode);
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     buttonrst.play();
-    displayNumber.innerHTML = counter;
+    displayNumber.innerHTML = "GoodNight Counter";
   }
   // media query handler function
   function mqHandler() {

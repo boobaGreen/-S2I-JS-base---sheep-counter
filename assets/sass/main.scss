@@ -64,10 +64,6 @@ body {
   }
 }
 
-.prova {
-  position: absolute;
-  z-index: 300;
-}
 /* ------- Counter - general style  ------- */
 .counter {
   //background-color: whitesmoke;
@@ -109,13 +105,13 @@ body {
   height: 6rem;
   width: 25rem;
   background: transparent;
-  color: $color-shadow-3;
+  color: $color-moon-yellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 /* ------- Counter - button's section ------- */
@@ -152,7 +148,7 @@ body {
 }
 
 button {
-  font-family: myFontBtn;
+  //font-family: myFontBtn;
   font-size: 2rem;
   height: 8rem;
   width: 8rem;
@@ -162,7 +158,8 @@ button {
   background-color: $color-background-night;
   border: none;
 
-  color: $color-shadow-3;
+  //color: $color-shadow-3;
+  color: $color-writing-primiry;
   padding: 0.1rem;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -171,28 +168,16 @@ button {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  @include respond(tab-land) {
-    //width<1200
-  }
-  @include respond(tab-port) {
-    //width<900
-  }
-  @include respond(phone) {
-    //width<600
-  }
-
-  @include respond(big-desktop) {
-    //>1800
-  }
 }
 button:hover {
   transform: translate(+0.4rem, -0.2rem);
-  color: $color-shadow-3;
-  box-shadow: -5px 5px 3px $color-shadow-3;
+  color: $color-moon-yellow;
+  box-shadow: -5px 5px 3px $color-moon-yellow;
 }
 button:after {
   content: "";
-  background: $color-shadow-3;
+  //background: $color-shadow-3;
+  background: $color-moon-yellow;
   border-radius: 100rem;
   display: block;
   position: absolute;
