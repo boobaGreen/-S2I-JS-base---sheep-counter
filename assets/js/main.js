@@ -56,6 +56,16 @@ export function main() {
     mqHandler();
   });
 
+  // Listen for orientation changes
+  window.addEventListener(
+    "orientationchange",
+    function () {
+      // Announce the new orientation number
+      mqHandler();
+    },
+    false
+  );
+
   ////////////////////////////////
   /* --- function section --- */
 
