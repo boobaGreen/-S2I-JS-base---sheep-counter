@@ -70,8 +70,6 @@ body {
 
 /* ------- Counter - general style  ------- */
 .counter {
-  //background-color: whitesmoke;
-
   flex-grow: 1;
   min-width: min-content;
   width: 80%;
@@ -79,8 +77,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
-  //box-shadow: 2px 3px 3px 2px $color-background-night;
+  box-shadow: 5px 5px 5px 5px $color-box-shadow;
   border-radius: 0.3rem;
   padding: 2rem;
   gap: 12rem; // default dai 1200 ai 1800
@@ -106,8 +103,6 @@ body {
 /* ------- Counter - display number ------- */
 
 .display-number {
-  // background: $color-background-night;;
-  //flex-grow: 1;
   height: 6rem;
   width: 25rem;
   background: transparent;
@@ -128,11 +123,9 @@ body {
   flex-direction: inline-flex;
   align-items: flex-start;
   justify-content: space-between;
-  //justify-content: space-between;
   width: 80%;
   gap: 5rem;
-  //border-radius:5px ;
-  //font-size: 100px;
+
   @include respond(tab-land) {
     //width<1200
   }
@@ -148,26 +141,23 @@ body {
 }
 
 .sheep {
-  color: $color-shadow-2;
   flex-grow: 2;
-  //font-size: 5rem;
   z-index: -5;
 }
 
 button {
-  //font-family: myFontBtn;
-  background-color: rgb(220, 216, 214);
-  font-size: 2.5rem;
+  background-color: $color-empty-button;
+  font-size: 2.2rem;
   font-weight: bolder;
   height: 8rem;
   width: 8rem;
   border-radius: 100%;
   border: none;
-  //color: $color-shadow-3;
+
   padding: 0.1rem;
   text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.8s; /* Safari */
+  transition-duration: 0.8s;
   text-decoration: none;
   position: relative;
   overflow: hidden;
@@ -185,13 +175,24 @@ button {
   }
 }
 button:hover {
-  transform: translate(+0.45rem, -0.225rem);
-  box-shadow: -5px 5px 3px $color-moon-yellow;
+  transform: translate(+0.85rem, -0.825rem);
+
+  &.button-reset {
+    box-shadow: -5px 5px 3px $color-button-rst-more;
+    color: $color-button-rst-more;
+  }
+  &.button-decrement {
+    box-shadow: -5px 5px 3px $color-button-dec-more;
+    color: $color-button-dec-more;
+  }
+  &.button-increment {
+    box-shadow: -5px 5px 3px $color-button-inc-more;
+    color: $color-button-inc-more;
+  }
 }
 button:after {
   content: "";
-  //background: $color-shadow-3;
-  background: rgb(142, 140, 140);
+  background: $color-shadow-1;
   border-radius: 100rem;
   display: block;
   position: absolute;
@@ -213,16 +214,16 @@ button:active:after {
   addElementInsideCounterButtonSection("button", "button-reset", "reset");
   addElementInsideCounterButtonSection("button", "button-increment", "+"); */
 .button-decrement {
-  box-shadow: -5px 5px 3px rgb(161, 20, 20);
-  color: rgb(161, 20, 20);
+  box-shadow: -5px 5px 3px $color-button-dec;
+  color: $color-button-dec;
 }
 .button-increment {
-  box-shadow: -5px 5px 3px rgb(74, 116, 11);
-  color: rgb(74, 116, 11);
+  box-shadow: -5px 5px 3px $color-button-inc;
+  color: $color-button-inc;
 }
 .button-reset {
-  box-shadow: -5px 5px 3px rgb(129, 129, 170);
-  color: rgb(129, 129, 170);
+  box-shadow: -5px 5px 3px $color-button-rst;
+  color: $color-button-rst;
 }
 /* ------- Counter - name's container ------- */
 
