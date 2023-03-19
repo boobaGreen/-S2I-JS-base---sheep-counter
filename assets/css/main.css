@@ -167,11 +167,8 @@ button {
   font-size: 2rem;
   height: 8rem;
   width: 8rem;
-  box-shadow: -3px 3px 3px whitesmoke;
   border-radius: 100%;
-  background-color: #28353e;
   border: none;
-  color: whitesmoke;
   padding: 0.1rem;
   text-align: center; /* Safari */
   transition-duration: 0.6s;
@@ -189,7 +186,7 @@ button:hover {
 
 button:after {
   content: "";
-  background: rgb(182, 154, 13);
+  background: whitesmoke;
   border-radius: 100rem;
   display: block;
   position: absolute;
@@ -206,6 +203,24 @@ button:active:after {
   margin: 0;
   opacity: 1;
   transition: 0s;
+}
+
+/* addElementInsideCounterButtonSection("button", "button-decrement", "-");
+  addElementInsideCounterButtonSection("button", "button-reset", "reset");
+  addElementInsideCounterButtonSection("button", "button-increment", "+"); */
+.button-decrement {
+  box-shadow: -5px 5px 3px rgb(161, 20, 20);
+  color: rgb(161, 20, 20);
+}
+
+.button-increment {
+  box-shadow: -5px 5px 3px rgb(74, 116, 11);
+  color: rgb(74, 116, 11);
+}
+
+.button-reset {
+  box-shadow: -5px 5px 3px rgb(129, 129, 170);
+  color: rgb(129, 129, 170);
 }
 
 /* ------- Counter - name's container ------- */
