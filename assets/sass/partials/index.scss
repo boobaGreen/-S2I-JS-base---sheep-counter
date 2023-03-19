@@ -6,7 +6,15 @@
 
 @font-face {
   font-family: myFont2;
-  src: url(./assets/font/ScriptSheep.ttf) format("truetype"); // la barra prima di asset la vuole
+  src: url(./assets/font/ScriptSheep.ttf) format("truetype");
+  // la barra prima di asset la vuole
+  src: url("./assets/font/ScriptSheep.ttf"); /* IE9 Compat Modes */
+  src: url("./assets/font/ScriptSheep.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("webfont.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/font/ScriptSheep.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/font/ScriptSheep#svgFontName")
+      format("svg"); /* Legacy iOS */
 }
 
 @font-face {
