@@ -1,0 +1,241 @@
+/* 
+0-600px: Phone
+600-900px: Tablet Portrait
+900-1200px: Tablet landscape
+[1200-1800]: e' la grandezza "Naturale" di partenza
+1800px+ : Big desktop
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+--ORDER-- Base+typography>general layout +grid>page layout> components
+
+*/
+/*
+
+1 em= 16px ( il resto del progetto era in rem che valeva 10px ma per le media query usiamo em per evitare che la scelta di una grandezza di font custom seclto dall'utente nel browser abbia la precedenza su quello che e' di base la ggrandezza del font scelta nel progetto
+max-width : domanda e' minore di x?
+min-width doomanda: e' maggiore di x?
+*/
+@font-face {
+  font-family: myFontCounter;
+  src: url("/sheep-counter/assets/font/ScriptofSheep.ttf");
+  src: url("/sheep-counter/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"), url("/sheep-counter/assets/font/ScriptofSheep.woff") format("woff"), url("/sheep-counter/assets/font/ScriptofSheep.ttf") format("truetype"), url("/sheep-counter/assets/font/ScriptofSheep#svgFontName") format("svg");
+}
+@font-face {
+  font-family: myFontBtn;
+  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf");
+  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf.eot?#iefix") format("embedded-opentype"), url("/sheep-counter/assets/font/DripOctoberRegular.woff") format("woff"), url("/sheep-counter/assets/font/DripOctoberRegular.ttf") format("truetype"), url("/sheep-counter/assets/font/DripOctoberRegular#svgFontName") format("svg");
+}
+/* ------- General style ------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: none !important;
+  border: none;
+  box-shadow: none;
+}
+
+html {
+  font-family: myFontCounter;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 31.25em) and (height > width) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (min-width: 100em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  min-width: 200px;
+  min-height: 350px;
+  overflow: hidden;
+  padding: 7rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: #28353e;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+  font-size: 16px;
+}
+@media only screen and (max-width: 31.25em) and (height > width) {
+  body {
+    padding: 4rem;
+  }
+}
+
+/* ------- Counter - general style  ------- */
+.counter {
+  flex-grow: 1;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 0.3rem;
+  padding: 2rem;
+  gap: 10rem;
+}
+.counter div {
+  margin: auto;
+}
+@media only screen and (max-width: 75em) {
+  .counter {
+    gap: 12rem;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .counter {
+    gap: 12rem;
+  }
+}
+@media only screen and (max-width: 31.25em) and (height > width) {
+  .counter {
+    gap: 1rem;
+  }
+}
+
+/* ------- Counter - display number ------- */
+.display-number {
+  height: 6rem;
+  width: 25rem;
+  background: transparent;
+  color: rgb(182, 154, 13);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+/* ------- Counter - button's section ------- */
+.button-container {
+  display: flex;
+  flex-direction: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+  gap: 5rem;
+}
+@media only screen and (max-width: 31.25em) and (height > width) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sheep {
+  color: rgba(98, 126, 144, 0.922);
+  flex-grow: 2;
+  z-index: -5;
+}
+
+button {
+  background-color: rgb(220, 216, 214);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 100%;
+  border: none;
+  padding: 0.1rem;
+  text-align: center; /* Safari */
+  transition-duration: 0.6s;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media only screen and (max-width: 50em) {
+  button {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+@media only screen and (max-width: 31.25em) and (height > width) {
+  button {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
+button:hover {
+  transform: translate(0.45rem, -0.225rem);
+  box-shadow: -5px 5px 3px rgb(182, 154, 13);
+}
+
+button:after {
+  content: "";
+  background: rgb(142, 140, 140);
+  border-radius: 100rem;
+  display: block;
+  position: absolute;
+  padding-top: 350%;
+  padding-left: 300%;
+  margin-left: -2rem !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+/* addElementInsideCounterButtonSection("button", "button-decrement", "-");
+  addElementInsideCounterButtonSection("button", "button-reset", "reset");
+  addElementInsideCounterButtonSection("button", "button-increment", "+"); */
+.button-decrement {
+  box-shadow: -5px 5px 3px rgb(161, 20, 20);
+  color: rgb(161, 20, 20);
+}
+
+.button-increment {
+  box-shadow: -5px 5px 3px rgb(74, 116, 11);
+  color: rgb(74, 116, 11);
+}
+
+.button-reset {
+  box-shadow: -5px 5px 3px rgb(129, 129, 170);
+  color: rgb(129, 129, 170);
+}
+
+/* ------- Counter - name's container ------- */
+/* ------- Mediaquery ------- *//*# sourceMappingURL=main.css.map */
