@@ -29,7 +29,7 @@ export function main() {
   //Audio Section
   let button = new Audio("assets/audio/swing.mp3");
   let buttonrst = new Audio("assets/audio/sheep.mp3");
-  let tapelow = new Audio("assets/audio/rewtape.mp3");
+  let tapelow = new Audio("assets/audio/lowtape.mp3");
   //bee=
 
   // Setting counter's initial value
