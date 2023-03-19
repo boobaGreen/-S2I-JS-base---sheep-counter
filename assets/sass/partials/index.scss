@@ -4,7 +4,37 @@
 @forward "utilities";
 // Font - type
 
+//////////////////////////////////////
+/// local
+/// /////////////////////////////////////
 @font-face {
+  font-family: myFontCounter;
+  // la barra prima di asset la vuole
+  src: url("/assets/font/ScriptofSheep.ttf"); /* IE9 Compat Modes */
+  src: url("/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/assets/font/ScriptofSheep.woff") format("woff"),
+    /* Modern Browsers */ url("/assets/font/ScriptofSheep.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("/assets/font/ScriptofSheep#svgFontName")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: myFontBtn;
+  // la barra prima di asset la vuole
+  src: url("/assets/font/DripOctoberRegular.ttf"); /* IE9 Compat Modes */
+  src: url("/assets/font/DripOctoberRegular.ttf.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/assets/font/DripOctoberRegular.woff") format("woff"),
+    /* Modern Browsers */ url("/assets/font/DripOctoberRegular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/assets/font/DripOctoberRegular#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+////////////////////////////////////
+/// ///////////git//////////////////
+/* @font-face {
   font-family: myFontCounter;
 
   src: url("/sheep-counter/assets/font/ScriptofSheep.ttf");
@@ -26,3 +56,4 @@
     url("/sheep-counter/assets/font/DripOctoberRegular#svgFontName")
       format("svg");
 }
+ */

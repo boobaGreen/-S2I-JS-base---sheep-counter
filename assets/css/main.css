@@ -22,14 +22,37 @@ min-width doomanda: e' maggiore di x?
 */
 @font-face {
   font-family: myFontCounter;
-  src: url("/sheep-counter/assets/font/ScriptofSheep.ttf");
-  src: url("/sheep-counter/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"), url("/sheep-counter/assets/font/ScriptofSheep.woff") format("woff"), url("/sheep-counter/assets/font/ScriptofSheep.ttf") format("truetype"), url("/sheep-counter/assets/font/ScriptofSheep#svgFontName") format("svg");
+  src: url("/assets/font/ScriptofSheep.ttf"); /* IE9 Compat Modes */
+  src: url("/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"), url("/assets/font/ScriptofSheep.woff") format("woff"), url("/assets/font/ScriptofSheep.ttf") format("truetype"), url("/assets/font/ScriptofSheep#svgFontName") format("svg"); /* Legacy iOS */
 }
 @font-face {
   font-family: myFontBtn;
-  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf");
-  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf.eot?#iefix") format("embedded-opentype"), url("/sheep-counter/assets/font/DripOctoberRegular.woff") format("woff"), url("/sheep-counter/assets/font/DripOctoberRegular.ttf") format("truetype"), url("/sheep-counter/assets/font/DripOctoberRegular#svgFontName") format("svg");
+  src: url("/assets/font/DripOctoberRegular.ttf"); /* IE9 Compat Modes */
+  src: url("/assets/font/DripOctoberRegular.ttf.eot?#iefix") format("embedded-opentype"), url("/assets/font/DripOctoberRegular.woff") format("woff"), url("/assets/font/DripOctoberRegular.ttf") format("truetype"), url("/assets/font/DripOctoberRegular#svgFontName") format("svg"); /* Legacy iOS */
 }
+/* @font-face {
+  font-family: myFontCounter;
+
+  src: url("/sheep-counter/assets/font/ScriptofSheep.ttf");
+  src: url("/sheep-counter/assets/font/ScriptofSheep.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sheep-counter/assets/font/ScriptofSheep.woff") format("woff"),
+    url("/sheep-counter/assets/font/ScriptofSheep.ttf") format("truetype"),
+    url("/sheep-counter/assets/font/ScriptofSheep#svgFontName") format("svg");
+}
+
+@font-face {
+  font-family: myFontBtn;
+
+  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf");
+  src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sheep-counter/assets/font/DripOctoberRegular.woff") format("woff"),
+    url("/sheep-counter/assets/font/DripOctoberRegular.ttf") format("truetype"),
+    url("/sheep-counter/assets/font/DripOctoberRegular#svgFontName")
+      format("svg");
+}
+ */
 /* ------- General style ------- */
 *,
 *::before,
@@ -38,10 +61,13 @@ min-width doomanda: e' maggiore di x?
   padding: 0;
   box-sizing: border-box;
   font: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *:focus {
-  outline: none;
+  outline: none !important;
+  border: none;
+  box-shadow: none;
 }
 
 html {

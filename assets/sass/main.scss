@@ -9,10 +9,13 @@
   padding: 0;
   box-sizing: border-box;
   font: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *:focus {
-  outline: none;
+  outline: none !important;
+  border: none;
+  box-shadow: none;
 }
 html {
   font-family: myFontCounter;
