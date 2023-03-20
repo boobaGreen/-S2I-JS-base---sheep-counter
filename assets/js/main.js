@@ -131,6 +131,8 @@ export function main() {
     }
     sheepbottom = calc_altezza(frame, hground, sheep_mode);
     sky();
+    var c = getElementById("canvas-generalsheep");
+    ctx.clearRect(0, 0, c.width, c.height);
     ground(sheep_mode);
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
 
