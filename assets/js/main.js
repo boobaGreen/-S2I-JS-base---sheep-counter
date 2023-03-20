@@ -117,8 +117,8 @@ export function main() {
   }
   // media query handler function
   function mqHandler() {
-    var c = document.getElementById("canvas-generalsheep");
-    ctx.clearRect(0, 0, c.width, c.height);
+    var canc = document.getElementById("canvas-generalsheep");
+    cancctx.clearRect(0, 0, canc.width, canc.height);
     let size = null;
     for (let [scr, mq] of Object.entries(screen)) {
       if (!mq || mq.matches) size = scr;
