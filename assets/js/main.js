@@ -117,6 +117,8 @@ export function main() {
   }
   // media query handler function
   function mqHandler() {
+    var c = getElementById("canvas-generalsheep");
+    ctx.clearRect(0, 0, c.width, c.height);
     let size = null;
     for (let [scr, mq] of Object.entries(screen)) {
       if (!mq || mq.matches) size = scr;
@@ -131,8 +133,7 @@ export function main() {
     }
     sheepbottom = calc_altezza(frame, hground, sheep_mode);
     sky();
-    var c = getElementById("canvas-generalsheep");
-    ctx.clearRect(0, 0, c.width, c.height);
+
     ground(sheep_mode);
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
 
