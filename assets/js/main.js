@@ -118,7 +118,7 @@ export function main() {
   // media query handler function
   function mqHandler() {
     var canc = document.getElementById("canvas-generalsheep");
-    const cancctx = canc.getContext('2d');
+    const cancctx = canc.getContext("2d");
     cancctx.clearRect(0, 0, canc.width, canc.height);
     let size = null;
     for (let [scr, mq] of Object.entries(screen)) {
