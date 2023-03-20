@@ -2,6 +2,7 @@ export default function ground(sheep_mode) {
   var c = document.getElementById("canvas-generalsheep");
   c.style.zIndex = "-1"; // prova!!!!!!!!!!!!!!!
   var ctx = c.getContext("2d");
+  ctx.clearRect(0, 0, c.width, c.height);
 
   let wground = document.documentElement.clientWidth;
   let hground = Math.trunc(wground / 5.727891156462585);
