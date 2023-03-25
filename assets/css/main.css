@@ -22,10 +22,26 @@ min-width doomanda: e' maggiore di x?
 */
 @font-face {
   font-family: myFontCounter;
-  src: url("/sheep-counter/assets/font/ScriptofSheep.ttf");
-  src: url("/sheep-counter/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"), url("/sheep-counter/assets/font/ScriptofSheep.woff") format("woff"), url("/sheep-counter/assets/font/ScriptofSheep.ttf") format("truetype"), url("/sheep-counter/assets/font/ScriptofSheep#svgFontName") format("svg");
+  src: url("/assets/font/ScriptofSheep.ttf"); /* IE9 Compat Modes */
+  src: url("/assets/font/ScriptofSheep.eot?#iefix") format("embedded-opentype"), url("/assets/font/ScriptofSheep.woff") format("woff"), url("/assets/font/ScriptofSheep.ttf") format("truetype"), url("/assets/font/ScriptofSheep#svgFontName") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: myFontBtn;
+  src: url("/assets/font/DripOctoberRegular.ttf"); /* IE9 Compat Modes */
+  src: url("/assets/font/DripOctoberRegular.ttf.eot?#iefix") format("embedded-opentype"), url("/assets/font/DripOctoberRegular.woff") format("woff"), url("/assets/font/DripOctoberRegular.ttf") format("truetype"), url("/assets/font/DripOctoberRegular#svgFontName") format("svg"); /* Legacy iOS */
 }
 /* @font-face {
+  font-family: myFontCounter;
+
+  src: url("/sheep-counter/assets/font/ScriptofSheep.ttf");
+  src: url("/sheep-counter/assets/font/ScriptofSheep.eot?#iefix")
+      format("embedded-opentype"),
+    url("/sheep-counter/assets/font/ScriptofSheep.woff") format("woff"),
+    url("/sheep-counter/assets/font/ScriptofSheep.ttf") format("truetype"),
+    url("/sheep-counter/assets/font/ScriptofSheep#svgFontName") format("svg");
+}
+
+@font-face {
   font-family: myFontBtn;
 
   src: url("/sheep-counter/assets/font/DripOctoberRegular.ttf");
@@ -174,11 +190,11 @@ body {
 }
 
 button {
-  background-color: rgb(213, 213, 209);
+  background-color: rgb(236, 236, 223);
   font-size: 2.2rem;
   font-weight: bolder;
-  height: 8rem;
-  width: 8rem;
+  height: 11rem;
+  width: 11rem;
   border-radius: 100%;
   border: none;
   padding: 0.1rem;
@@ -191,14 +207,14 @@ button {
 }
 @media only screen and (max-width: 50em) {
   button {
-    height: 8rem;
-    width: 8rem;
+    height: 11rem;
+    width: 11rem;
   }
 }
 @media only screen and (max-width: 31.25em) {
   button {
-    height: 8rem;
-    width: 8rem;
+    height: 11rem;
+    width: 11rem;
   }
 }
 
@@ -206,16 +222,16 @@ button:hover {
   transform: translate(0.85rem, -0.825rem);
 }
 button:hover.button-reset {
-  box-shadow: -5px 5px 3px rgba(64, 131, 183, 0.92);
-  color: rgba(64, 131, 183, 0.92);
+  box-shadow: -5px 5px 3px rgba(113, 185, 239, 0.92);
+  color: rgba(113, 185, 239, 0.92);
 }
 button:hover.button-decrement {
-  box-shadow: -5px 5px 3px rgba(203, 96, 116, 0.92);
-  color: rgba(203, 96, 116, 0.92);
+  box-shadow: -5px 5px 3px rgba(242, 97, 124, 0.92);
+  color: rgba(242, 97, 124, 0.92);
 }
 button:hover.button-increment {
-  box-shadow: -5px 5px 3px rgba(84, 181, 32, 0.92);
-  color: rgba(84, 181, 32, 0.92);
+  box-shadow: -5px 5px 3px rgba(133, 243, 74, 0.92);
+  color: rgba(133, 243, 74, 0.92);
 }
 
 button:after {

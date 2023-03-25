@@ -149,8 +149,8 @@ button {
   background-color: $color-empty-button;
   font-size: 2.2rem;
   font-weight: bolder;
-  height: 8rem;
-  width: 8rem;
+  height: 11rem;
+  width: 11rem;
   border-radius: 100%;
   border: none;
 
@@ -165,13 +165,13 @@ button {
 
   @include respond(tab-port) {
     //width<900
-    height: 8rem;
-    width: 8rem;
+    height: 11rem;
+    width: 11rem;
   }
   @include respond(phone) {
     //width<600
-    height: 8rem;
-    width: 8rem;
+    height: 11rem;
+    width: 11rem;
   }
 }
 button:hover {
