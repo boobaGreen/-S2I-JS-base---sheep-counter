@@ -3,8 +3,7 @@ import ground from "./ground.js";
 import drawing_sheep from "./draw_sheep.js";
 import sheepx from "./sheepx.js";
 import calc_altezza from "./calc_altezza.js";
-let viewportx = window.innerWidth;
-let viewporty = window.innerHeight;
+
 const screen = {
   smaller: null,
   phone: window.matchMedia("(min-width: 360px)"),
@@ -55,16 +54,6 @@ export function main() {
   window.addEventListener("resize", function (event) {
     mqHandler();
   });
-
-  // Listen for orientation changes
-  /*  window.addEventListener(
-    "orientationchange",
-    function () {
-
-      mqHandler();
-    },
-    false
-  ); */
 
   ////////////////////////////////
   /* --- function section --- */
@@ -137,9 +126,5 @@ export function main() {
 
     ground(sheep_mode);
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
-
-    //////////////////////////////////test
-    ////////////////////////////
-    //////prova
   }
 }
