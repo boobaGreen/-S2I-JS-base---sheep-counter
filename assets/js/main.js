@@ -58,11 +58,19 @@ export function main() {
   ////////////////////////////////
   /* --- function section --- */
 
+  /* function time color for border when button pressed*/
+  function colortime() {
+    let countelement = document.getElementById("counter");
+    setTimeout(() => {
+      countelement.style.boxShadow = "5px 5px 5px 5px rgba(0, 0, 0, 0.25)";
+    }, "100");
+  }
   // function - increment value
   function incrementCounter() {
     if (counter > 999999) {
       counter = -1;
     }
+
     counter++;
     frame++;
     if (frame == 7) {
@@ -73,6 +81,9 @@ export function main() {
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     button.play();
     displayNumber.innerHTML = counter;
+    let c = document.getElementById("counter");
+    c.style.boxShadow = "6px 6px 6px 6px rgba(133, 243, 74, 0.92)";
+    colortime();
   }
 
   // function - decrement value
@@ -92,6 +103,9 @@ export function main() {
     tapelow.play();
     displayNumber.innerHTML = counter;
     //se verso allora il frame zero si comporta in n modo se altro verso in un altro
+    let c = document.getElementById("counter");
+    c.style.boxShadow = "6px 6px 6px 6px rgba(242, 97, 124, 0.92)";
+    colortime();
   }
 
   // function - reset value
@@ -103,6 +117,9 @@ export function main() {
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     buttonrst.play();
     displayNumber.innerHTML = "GoodNight Counter";
+    let c = document.getElementById("counter");
+    c.style.boxShadow = "6px 6px 6px 6px rgba(113, 185, 239, 0.92)";
+    colortime();
   }
   // media query handler function
   function mqHandler() {
