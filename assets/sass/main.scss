@@ -64,15 +64,15 @@ body {
   font-size: 16px;
   @include respond(tab-land) {
     //width<1200
-    gap: 8rem;
+    padding: 5rem;
   }
   @include respond(tab-port) {
     //width<900
-    gap: 6rem;
+    padding: 3rem;
   }
   @include respond(phone) {
     //width<600
-    gap: 4rem;
+    padding: 2rem;
   }
 }
 
