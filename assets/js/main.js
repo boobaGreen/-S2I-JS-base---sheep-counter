@@ -56,7 +56,7 @@ export function main() {
   });
   let countelement = document.getElementById("counter");
   incrementButton.addEventListener("pointerup", (event) => {});
-  onmouseup = (event) => {
+  pointerup = (event) => {
     countelement.style.boxShadow = "5px 5px 5px 5px rgba(0, 0, 0, 0.25)";
   };
 
