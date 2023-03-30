@@ -84,7 +84,12 @@ html {
     font-size: 50%;
   }
 }
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 43.75em) and (orientation: landscape) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 43.75em) and (orientation: portrait) {
   html {
     font-size: 40%;
   }
@@ -122,7 +127,12 @@ body {
     padding: 3rem;
   }
 }
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 43.75em) and (orientation: portrait) {
+  body {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 43.75em) and (orientation: landscape) {
   body {
     padding: 2rem;
   }
@@ -157,10 +167,18 @@ body {
     width: 95%;
   }
 }
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 43.75em) and (orientation: portrait) {
   .counter {
     gap: 10rem;
     width: 95%;
+    box-shadow: 5px 5px 5px 5px yellowgreen;
+  }
+}
+@media only screen and (max-width: 43.75em) and (orientation: landscape) {
+  .counter {
+    gap: 10rem;
+    width: 95%;
+    box-shadow: 5px 5px 5px 5px red;
   }
 }
 
@@ -186,7 +204,14 @@ body {
   width: 80%;
   gap: 5rem;
 }
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 43.75em) and (orientation: portrait) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 43.75em) and (orientation: landscape) {
   .button-container {
     flex-direction: column;
     align-items: center;
@@ -216,12 +241,6 @@ button {
   cursor: pointer;
 }
 @media only screen and (max-width: 50em) {
-  button {
-    height: 11rem;
-    width: 11rem;
-  }
-}
-@media only screen and (max-width: 43.75em) {
   button {
     height: 11rem;
     width: 11rem;

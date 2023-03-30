@@ -21,12 +21,25 @@ $breakpoint argument choices:
 max-width : domanda e' minore di x?
 min-width doomanda: e' maggiore di x?
 */
+
+// cell landscape mode client 724 x , screen 804 x
+//       mode client 268 y , screen 360 y
+
+// cell portrait mode client 360 x , screen 360 x
+//       mode client 668 y , screen 804 y
+
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media only screen and (max-width: 43.75em) {
+  @if $breakpoint == phone-land {
+    @media only screen and (max-width: 43.75em) and (orientation: landscape) {
       @content;
-    } //500px
+    } //700px
   }
+  @if $breakpoint == phone-port {
+    @media only screen and (max-width: 43.75em) and (orientation: portrait) {
+      @content;
+    } //700px
+  }
+
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 50em) {
       @content;

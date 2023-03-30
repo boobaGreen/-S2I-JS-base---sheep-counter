@@ -47,15 +47,15 @@ export function main() {
   // first event
   mqHandler();
   // addEventListener
-  incrementButton.addEventListener("mousedown", incrementCounter);
-  decrementButton.addEventListener("mousedown", decrementCounter);
-  resetButton.addEventListener("mousedown", resetCounter);
+  incrementButton.addEventListener("pointerdown", incrementCounter);
+  decrementButton.addEventListener("pointerdown", decrementCounter);
+  resetButton.addEventListener("pointerdown", resetCounter);
 
   window.addEventListener("resize", function (event) {
     mqHandler();
   });
   let countelement = document.getElementById("counter");
-  incrementButton.addEventListener("mouseup", (event) => {});
+  incrementButton.addEventListener("pointerup", (event) => {});
   onmouseup = (event) => {
     countelement.style.boxShadow = "5px 5px 5px 5px rgba(0, 0, 0, 0.25)";
   };
@@ -71,8 +71,10 @@ export function main() {
     }, "100");
   } */
   // function - increment value
+
   function incrementCounter() {
     //let c = document.getElementById("counter");
+    console.log("sono dentro counter normal clik");
     countelement.style.boxShadow = "6px 6px 6px 6px rgba(133, 243, 74, 0.92)";
     // colortime();
     if (counter > 999999) {
