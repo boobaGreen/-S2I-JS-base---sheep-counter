@@ -121,7 +121,18 @@ export function main() {
     sheepbottom = calc_altezza(frame, hground, sheep_mode);
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     buttonrst.play();
-    displayNumber.innerHTML = "GoodNight Counter";
+    //************DA RIMETTERE******//    displayNumber.innerHTML = "GoodNight Counter";
+    var wwindows = document.documentElement.clientWidth;
+    var hwindows = document.documentElement.clientHeight;
+    displayNumber.innerHTML =
+      "client_x: " +
+      wwindows +
+      " screen_x" +
+      window.screen.availWidth +
+      "client_y: " +
+      hwindows +
+      " screen_y" +
+      window.screen.availHeight;
     //let c = document.getElementById("counter");
     countelement.style.boxShadow = "6px 6px 6px 6px rgba(113, 185, 239, 0.92)";
     // colortime();

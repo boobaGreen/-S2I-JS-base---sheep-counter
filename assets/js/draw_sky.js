@@ -4,9 +4,12 @@ export default function sky() {
   c.style.zIndex = "-5"; // prova!!!!!!!!!!!!!!!
 
   var ctx = c.getContext("2d");
+  console.log("c.width prima:", c.width);
+  console.log("screen aviable prima :", window.screen.availWidth);
   var xMax = (c.width = window.screen.availWidth);
   var yMax = (c.height = window.screen.availHeight);
-
+  console.log("c.width dopo :", c.width);
+  console.log("screen aviable prima :", window.screen.availWidth);
   var hmTimes = Math.round(xMax + yMax) / 3; // quantita' stelle rispetto ai lati di base Math.round(xMax + yMax)
   let yMaxCapped = (yMax / 3) * 1.8; // aggiunta da me per limitare il cielo ad un altezza minima cappata sull orizzonte
   for (var i = 0; i <= hmTimes; i++) {
