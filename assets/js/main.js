@@ -55,8 +55,8 @@ export function main() {
     mqHandler();
   });
   let countelement = document.getElementById("counter");
-  incrementButton.addEventListener("pointerup", (event) => {});
-  pointerup = (event) => {
+  incrementButton.addEventListener("mouseup", (event) => {});
+  onpointerup = (event) => {
     countelement.style.boxShadow = "5px 5px 5px 5px rgba(0, 0, 0, 0.25)";
   };
 
