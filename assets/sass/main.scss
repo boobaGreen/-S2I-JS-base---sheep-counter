@@ -73,15 +73,15 @@ body {
   }
   @include respond(tab-port) {
     //width<900
-    padding: 3rem;
+    padding: 1rem;
   }
   @include respond(phone-port) {
     //width<700
-    padding: 2rem;
+    padding: 5rem;
   }
   @include respond(phone-land) {
     //width<700
-    padding: 2rem;
+    padding: 5rem;
   }
 }
 
