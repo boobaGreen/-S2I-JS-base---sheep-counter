@@ -7,7 +7,6 @@ import {
 import { main } from "./main.js";
 
 async function init() {
-  // const counterMainDiv = document.getElementById("counter");
   createGeneralElement("canvas", "sky", "");
   createGeneralElement("div", "counter", "");
 
