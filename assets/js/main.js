@@ -60,18 +60,6 @@ export function main() {
     countelement.style.boxShadow = "5px 5px 5px 5px rgba(0, 0, 0, 0.25)";
   };
 
-  ////////////////////////////////
-  /* --- function section --- */
-
-  /* function time color for border when button pressed*/
-  /*  function colortime() {
-    let countelement = document.getElementById("counter");
-    setTimeout(() => {
-      countelement.style.boxShadow = "5px 5px 5px 5px rgba(0, 0, 0, 0.25)";
-    }, "100");
-  } */
-  // function - increment value
-
   function incrementCounter() {
     //let c = document.getElementById("counter");
     console.log("sono dentro counter normal clik");
