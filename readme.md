@@ -3,12 +3,13 @@ Project realized for the [Start2Impact](https://www.start2impact.it/) "Javascrip
 The demands of the exercise:Let's create a simple application that works as a counter.
 Develop a JavaScript application that allows the user to increase and decrease the value of the counter.
 As soon as the user enters the page, he will see 0 as the counter value and will have two +/- buttons available to change the counter value.
-
 You can change the value by pressing "-" and "+" buttons and reset the value with the "reset" button.
-
 When you push the "+" or "-" key the counter moves by a corresponding unit and the sheep moves forward in case of "+" and backward in case of "-"
-
 When the reset button is pressed, the sheep returns to the starting point and the message "GoodNight Counter" appears instead of the counter
+The application must be developed with JavaScript. The use of Jquery is not allowed, the use of any framework is not allowed (React, Angular, Vue...).
+The use, if necessary, of external JavaScript libraries is permitted.
+The +/- buttons, and also the display of the counter value must be implemented with JavaScript.
+Any additional features deemed necessary are allowed.
 
 🔗 Project Link : [GoodNight Counter](https://boobagreen.github.io/sheep-counter/)
 
