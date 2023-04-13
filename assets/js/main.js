@@ -61,10 +61,7 @@ export function main() {
   };
 
   function incrementCounter() {
-    //let c = document.getElementById("counter");
-    console.log("sono dentro counter normal clik");
     countelement.style.boxShadow = "6px 6px 6px 6px rgba(133, 243, 74, 0.92)";
-    // colortime();
     if (counter > 999999) {
       counter = -1;
     }
@@ -97,10 +94,7 @@ export function main() {
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     tapelow.play();
     displayNumber.innerHTML = counter;
-    //se verso allora il frame zero si comporta in n modo se altro verso in un altro
-    //let c = document.getElementById("counter");
     countelement.style.boxShadow = "6px 6px 6px 6px rgba(242, 97, 124, 0.92)";
-    // colortime();
   }
 
   // function - reset value
@@ -112,9 +106,7 @@ export function main() {
     drawing_sheep(PECOARRAY[frame], sheepbottom, sheepleft, sheep_mode);
     buttonrst.play();
     displayNumber.innerHTML = "GoodNight Counter";
-    //let c = document.getElementById("counter");
     countelement.style.boxShadow = "6px 6px 6px 6px rgba(113, 185, 239, 0.92)";
-    // colortime();
   }
   // media query handler function
   function mqHandler() {

@@ -15,4 +15,3 @@ export default function calc_altezza(frame, hground, mode_sheep) {
   }
   return output;
 }
-// qui ci va il calcolo dell'altezzza frame pecora se sono in modalita' corta
