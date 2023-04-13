@@ -3,6 +3,10 @@ Project realized for the [Start2Impact](https://www.start2impact.it/) "Javascrip
 
 You can change the value by pressing "-" and "+" buttons and reset the value with the "reset" button.
 
+When you push the "+" or "-" key the counter moves by a corresponding unit and the sheep moves forward in case of "+" and backward in case of "-"
+
+When the reset button is pressed, the sheep returns to the starting point and the message "GoodNight Counter" appears instead of the counter
+
 🔗 Project Link : [GoodNight Counter](https://boobagreen.github.io/sheep-counter/)
 
 Screenshots :
@@ -34,6 +38,6 @@ When the sheep moves forward there is a sound reminiscent of a jump, for reset a
 
 The choice of font was important and sought after because it was part of the design in a decisive way. I am very happy with what I found, I think it fits very well with the project as a whole.
 
-The design of the buttons and the lighting of the base plate are totally original and made after various less fortunate attempts, but in this process as in the others of the project I am happy to have created something original and totally autonomously, following a precise idea but also letting myself be guided by inspiration and attempts, let's say I followed a standard that I had in mind but I didn't hold back in experimenting with some variations on the theme, a bit like in jazz.
+The design of the buttons and the lighting of the base plate are totally original and made after various less fortunate attempts, but in this process as in the others of the project I am happy to have created something original and totally autonomously, following a precise idea but also letting myself be guided by inspiration and attempts, let's say I followed a standard that I had in mind but I didn't hold back in experimenting with some variations on the theme, a bit like in jazz Music.
 
 The design of the project has gone through many intermediate stages, one of the latest stages of progress is for example this: [Provisional version](https://boobagreen.github.io/Counter/)
