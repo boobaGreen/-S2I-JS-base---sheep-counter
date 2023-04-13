@@ -5,7 +5,7 @@ export default function calc_altezza(frame, hground, mode_sheep) {
   if (frame == 3) {
     output = hground * 0.8;
   } else if (frame == 4 || frame == 2) {
-    output = hground * 0.6; ////kostant
+    output = hground * 0.6; ////costant
   } else {
     output = Math.trunc(hground / 10);
   }

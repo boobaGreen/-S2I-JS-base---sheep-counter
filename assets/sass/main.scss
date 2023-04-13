@@ -73,7 +73,7 @@ body {
   }
   @include respond(tab-port) {
     //width<900
-    padding: 1rem;
+    padding: 5rem;
   }
   @include respond(phone-port) {
     //width<700
@@ -114,17 +114,13 @@ body {
     //width<700
     gap: 10rem;
     width: 95%;
-
-    //test da togliere *********
-    box-shadow: 5px 5px 5px 5px yellowgreen;
+    padding: 0.3rem;
   }
   @include respond(phone-land) {
     //width<700
     gap: 10rem;
     width: 95%;
-
-    //test da togliere *********
-    box-shadow: 5px 5px 5px 5px red;
+    padding: 0.1rem;
   }
 }
 
@@ -164,13 +160,13 @@ body {
     //width<700
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 1.5rem;
   }
   @include respond(phone-land) {
     //width<700
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 1.5rem;
   }
 }
 

@@ -102,7 +102,7 @@ body {
 }
 @media only screen and (max-width: 50em) {
   body {
-    padding: 1rem;
+    padding: 5rem;
   }
 }
 @media only screen and (max-width: 43.75em) and (orientation: portrait) {
@@ -149,6 +149,7 @@ body {
   .counter {
     gap: 10rem;
     width: 95%;
+    padding: 0.3rem;
     box-shadow: 5px 5px 5px 5px yellowgreen;
   }
 }
@@ -156,6 +157,7 @@ body {
   .counter {
     gap: 10rem;
     width: 95%;
+    padding: 0.1rem;
     box-shadow: 5px 5px 5px 5px red;
   }
 }
@@ -186,14 +188,14 @@ body {
   .button-container {
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 1.5rem;
   }
 }
 @media only screen and (max-width: 43.75em) and (orientation: landscape) {
   .button-container {
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 1.5rem;
   }
 }
 
