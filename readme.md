@@ -17,4 +17,5 @@ Text Color #FAF8FF
 
 🔗 Social Links
 portfolio : https://boobagreen.github.io/portfolio/
+
 linkedin : https://www.linkedin.com/in/claudio-dall-ara-244816175/
