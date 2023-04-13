@@ -5,7 +5,7 @@ You can change the value by pressing "-" and "+" buttons and reset the value wit
 
 Project Link
 
-[GoodNight Counter] (https://boobagreen.github.io/sheep-counter/)
+GoodNight Counter : https://boobagreen.github.io/sheep-counter/
 
 🔗 https://boobagreen.github.io/sheep-counter/
 
@@ -18,3 +18,5 @@ Features
 Portfolio : https://boobagreen.github.io/portfolio/
 
 Linkedin : https://www.linkedin.com/in/claudio-dall-ara-244816175/
+
+This site was built using [GitHub Pages](https://pages.github.com/).
