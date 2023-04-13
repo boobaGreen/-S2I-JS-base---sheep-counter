@@ -1,5 +1,8 @@
-GoodNight Counter
+-------GoodNight Counter-------
 Project realized for the [Start2Impact](https://www.start2impact.it/) "Javascript Basics" course.
+The demands of the exercise:Let's create a simple application that works as a counter.
+Develop a JavaScript application that allows the user to increase and decrease the value of the counter.
+As soon as the user enters the page, he will see 0 as the counter value and will have two +/- buttons available to change the counter value.
 
 You can change the value by pressing "-" and "+" buttons and reset the value with the "reset" button.
 
