@@ -8,6 +8,3 @@ export default function createGeneralElement(tagHtml, className, content) {
   newElement.setAttribute("id", className);
   body.appendChild(newElement);
 }
-
-// Elements generated
-// createGeneralElement("div", "counter", "");

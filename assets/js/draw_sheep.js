@@ -16,7 +16,6 @@ export default function drawing_sheep(frame, bottom, left, sheep_mode) {
 
   const img = new Image();
   img.onload = () => {
-    //ctx.clearRect(0, 0, xMax, yMax); // pulizia pecora precedente se necessario
     c.style.position = "absolute";
     c.style.bottom = bottom + "px"; // posizione pecora dal basso PASSATA in func
     c.style.left = left + "px"; // posizione pecora da sx PASSATA in func

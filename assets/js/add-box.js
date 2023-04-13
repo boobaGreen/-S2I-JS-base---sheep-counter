@@ -12,11 +12,7 @@ export function addElement(tagHtml, className, content) {
   counterMainDiv.appendChild(counterNewElement);
 }
 
-// Counter - Elements inside div "Counter"
-/* addElement("div", "display-number", "0");
-addElement("div", "button-container", "");
-addElement("div", "sheep", "");
- */
+
 // Counter's name section - getted element
 const counterNameSection = document.getElementById("sheep");
 
@@ -35,7 +31,6 @@ export function addElementInsideCounterNameSection(
 }
 
 // Counter's name section - elements inside this section
-// addElementInsideCounterNameSection("h1", "pecora-space", "pecora-space");
 
 // Button's container - getted element
 const buttonSection = document.getElementById("button-container");
@@ -54,7 +49,3 @@ export function addElementInsideCounterButtonSection(
   buttonSection.appendChild(buttonSectionNewElement);
 }
 
-// Button's container - elements inside button button's container
-/* addElementInsideCounterButtonSection("button", "button-increment", "+");
-addElementInsideCounterButtonSection("button", "button-reset", "reset");
-addElementInsideCounterButtonSection("button", "button-decrement", "-"); */

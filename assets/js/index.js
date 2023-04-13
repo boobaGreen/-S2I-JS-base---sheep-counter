@@ -12,7 +12,7 @@ async function init() {
   createGeneralElement("div", "counter", "");
 
   addElement("div", "button-container", "");
-  addElement("div", "display-number", "GoodNight Counter");
+  addElement("div", "display-number", "0");
 
   addElement("div", "sheep", "");
   addElementInsideCounterNameSection("canvas", "canvas-generalsheep", "pecora");
