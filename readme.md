@@ -1,5 +1,7 @@
 -------GoodNight Counter-------
 
+🔗 Project Link : [GoodNight Counter](https://boobagreen.github.io/sheep-counter/)
+
 Project realized for the [Start2Impact](https://www.start2impact.it/) "Javascript Basics" course.
 The demands of the exercise:Let's create a simple application that works as a counter.
 Develop a JavaScript application that allows the user to increase and decrease the value of the counter.
@@ -11,8 +13,6 @@ The application must be developed with JavaScript. The use of Jquery is not allo
 The use, if necessary, of external JavaScript libraries is permitted.
 The +/- buttons, and also the display of the counter value must be implemented with JavaScript.
 Any additional features deemed necessary are allowed.
-
-🔗 Project Link : [GoodNight Counter](https://boobagreen.github.io/sheep-counter/)
 
 Screenshots :
 
