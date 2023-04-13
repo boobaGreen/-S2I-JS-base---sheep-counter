@@ -42,6 +42,8 @@ I also wanted to add some sounds, which initially as you can see from the provis
 When the sheep moves forward there is a sound reminiscent of a jump, for reset a sheep bleat, and for backward movement a sound reminiscent of old tape winding (rew)
 
 The choice of font was important and sought after because it was part of the design in a decisive way. I am very happy with what I found, I think it fits very well with the project as a whole.
+in this regard I had a technical difficulty on the use of particular fonts with Github Page. The path for the fonts in the index.scss file must be one to work correctly locally on Visual studio code (indexvs.txt) and the other to work correctly on Github Page (indexgit.txt) hence the index.scss file currently it is the copy of indexgit.txt but if you want to work locally displaying the font correctly you need to replace the content of index.scss with that of indexvs.txt and vice versa.
+I couldn't find a more comfortable mode, I think it's a small limitation of Githib Page but I still wanted to use this tool for publishing because in other respects it is very comfortable for me.
 
 The design of the buttons and the lighting of the base plate are totally original and made after various less fortunate attempts, but in this process as in the others of the project I am happy to have created something original and totally autonomously, following a precise idea but also letting myself be guided by inspiration and attempts, let's say I followed a standard that I had in mind but I didn't hold back in experimenting with some variations on the theme, a bit like in jazz Music.
 
