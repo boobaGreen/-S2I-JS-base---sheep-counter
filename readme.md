@@ -1,6 +1,6 @@
 -------GoodNight Counter-------
 
-🔗 Project Link : [GoodNight Counter](https://boobagreen.github.io/-S2I-JS-base---sheep-counter/)
+🔗 Project Link : [GoodNight Counter](https://boobagreen.github.io/sheep-counter/)
 
 Project realized for the [Start2Impact](https://www.start2impact.it/) "Javascript Basics" course.
 The demands of the exercise:Let's create a simple application that works as a counter.
